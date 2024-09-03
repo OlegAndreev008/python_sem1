@@ -3,7 +3,7 @@
 # a a a b c c a d c a a исходник
 # a a_1 a_2 b c c_1 a_3 d c_2 a_4 a_5 вывод повтора через "_"
 
-# list1 = 'a a a b c c a d c a a'.split()
+# list1 = 'l j h f h c v j l'.split()
 # dict1 = {}
 # for el in list1:
 #     if el in dict1:
@@ -39,3 +39,17 @@
 #         max_num = n
 #     n = int(input("number "))
 # print(max_num)
+n = int(input('numbers '))
+mx = 2
+mn = 1
+for i in range(1, n+1):
+    num = int(input(f'num {i} '))
+    if num > mx:
+        temp = mx
+        mx = num
+        mn = temp
+    elif (num > mn and num < mx):
+        mn = num
+
+print(mx)
+print(mn)

@@ -37,7 +37,19 @@
 #     print('yes')
 # else:
 #     print('no')
-
+#
+# 2 способ. Выглядит проще.
+# def simple(n):
+#     for i in range(2, n):
+#         if n % i == 0:
+#             return False
+#     return True
+# num = int(input('number '))
+# if simple(num):
+#     print('simple')
+# else:
+#     print('not simple')
+#
 # Задача 4. Дано натуральное число и послед-ть из этого кол-ва элементов.
 # Вывести послед-ть в обратном порядке без испол-я циклов и доп массивов.
 # def back_seq(n):
